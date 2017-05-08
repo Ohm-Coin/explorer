@@ -1,7 +1,5 @@
 /*
   This file must be valid JSON. But comments are allowed
-
-  Please edit settings.json, not settings.json.template
 */
 {
   // name your instance!
@@ -10,10 +8,10 @@
   "address": "127.0.0.1:3001",
 
   // coin name
-  "coin": "Darkcoin",
+  "coin": "OHM",
 
   // coin symbol
-  "symbol": "DRK",
+  "symbol": "OHM",
 
   // logo
   "logo": "/images/logo.png",
@@ -33,11 +31,11 @@
 
   // database settings (MongoDB)
   "dbsettings": {
-    "user": "iquidus",
-    "password": "3xp!0reR",
+    "user": "user",
+    "password": "pass",
     "database": "explorerdb",
     "address": "localhost",
-    "port": 27017
+    "port": 
   },
 
   //update script settings
@@ -47,13 +45,13 @@
   // wallet settings
   "wallet": {
     "host": "localhost",
-    "port": 9332,
-    "user": "darkcoinrpc",
-    "pass": "123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
+    "port": 93,
+    "user": "user",
+    "pass": "pass"
   },
 
   // confirmations
-  "confirmations": 40,
+  "confirmations": 30,
 
   // language settings
   "locale": "locale/en.json",
@@ -74,7 +72,7 @@
   // index page (valid options for difficulty are POW, POS or Hybrid)
   "index": {
     "show_hashrate": true,
-    "difficulty": "POW",
+    "difficulty": "POS",
     "last_txs": 100
   },
 
@@ -138,7 +136,7 @@
   // HEAVY: retreive from heavys getsupply api call
   // BALANCES : total of all address balances
   // TXOUTSET : retreive from gettxoutsetinfo api call
-  "supply": "COINBASE",
+  "supply": "GETINFO",
 
   // how to acquire network hashrate
   // getnetworkhashps: uses getnetworkhashps api call, returns in GH/s
@@ -147,7 +145,7 @@
 
   // nethash unitd: sets nethash API return units
   // valid options: "P" (PH/s), "T" (TH/s), "G" (GH/s), "M" (MH/s), "K" (KH/s)
-  "nethash_units": "G",
+  "nethash_units": "K",
 
   // Address labels
   // example : "JhbrvAmM7kNpwA6wD5KoAsbtikLWWMNPcM": {"label": "This is a burn address", "type":"danger", "url":"http://example.com"}
